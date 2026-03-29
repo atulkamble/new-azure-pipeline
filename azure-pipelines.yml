@@ -21,4 +21,6 @@ steps:
     echo "checked git version"
     docker --version
     echo "checked docker version"
+    terraform --version
+    echo "checked terraform version"
   displayName: 'Post-Deployment Tests'  
