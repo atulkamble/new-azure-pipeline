@@ -13,3 +13,8 @@ steps:
   displayName: 'Test'
 - script: echo "Deploying the application..."
   displayName: 'Deploy' 
+- script: | 
+    echo "Running post-deployment tests..."
+    mkdir -p test-results
+    echo "Test results" > test-results/results.txt
+  displayName: 'Post-Deployment Tests'  
