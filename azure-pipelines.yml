@@ -6,9 +6,6 @@ pool:
 
 steps:
 - script: | 
-    echo "Running post-deployment tests..."
-    mkdir -p test-results
-    echo "Test results" > test-results/results.txt
     git --version 
     echo "checked git version"
     docker --version
