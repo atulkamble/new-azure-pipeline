@@ -19,4 +19,6 @@ steps:
     echo "Test results" > test-results/results.txt
     git --version 
     echo "checked git version"
+    docker --version
+    echo "checked docker version"
   displayName: 'Post-Deployment Tests'  
