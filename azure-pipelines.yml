@@ -22,5 +22,6 @@ steps:
     docker --version
     echo "checked docker version"
     terraform --version
+    sudo apt-get install -y terraform
     echo "checked terraform version"
   displayName: 'Post-Deployment Tests'  
