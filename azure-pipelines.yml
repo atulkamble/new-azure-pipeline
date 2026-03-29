@@ -5,9 +5,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: | 
-  echo "Installing Python 3.8"
-  sudo apt install python -y 
-  python --version
-  python helloworld.py  
-  displayName: 'python' 
+- script: |
+    echo "Installing Python 3.8"
+    sudo apt-get update
+    sudo apt-get install python3 -y 
+    python3 --version
+    python3 helloworld.py  
+  displayName: 'Run Python Script' 
