@@ -1,8 +1,13 @@
-trigger: main 
+trigger:
+- main
+
 pool:
-  vmImage: 'ubuntu-latest'  
+  vmImage: 'ubuntu-latest'
 
 steps:
-- task: echo "Building the project..."
-- task: echo "Running tests..."
-- task: echo "Deploying the application..." 
+- script: echo "Building the project..."
+  displayName: 'Build'
+- script: echo "Running tests..."
+  displayName: 'Test'
+- script: echo "Deploying the application..."
+  displayName: 'Deploy' 
