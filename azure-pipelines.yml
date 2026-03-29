@@ -1,5 +1,8 @@
 trigger:
 - main
+- develop
+- staging
+- release/*
 
 pool:
   vmImage: 'ubuntu-latest'
